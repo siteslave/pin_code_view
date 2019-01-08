@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 class CustomKeyboard extends StatefulWidget {
   final Function onBackPressed, onPressedKey;
   final TextStyle textStyle;
+  final Color backspaceColor;
+
   CustomKeyboard({
     this.onBackPressed,
     this.onPressedKey,
     this.textStyle,
+    this.backspaceColor,
   });
 
   CustomKeyboardState createState() => CustomKeyboardState();
@@ -131,7 +134,7 @@ class CustomKeyboardState extends State<CustomKeyboard> {
                 onPressed: () => widget.onBackPressed(),
                 icon: Icon(
                   Icons.backspace,
-                  color: Colors.blueGrey[800],
+                  color: widget.backspaceColor,
                 ),
               ),
             ],
