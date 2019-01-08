@@ -29,26 +29,29 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("1"),
-                icon: Text(
-                  "1",
-                  style: widget.textStyle,
-                ),
+                child: Text("1", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("2"),
-                icon: Text(
-                  "2",
-                  style: widget.textStyle,
-                ),
+                child: Text("2", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("3"),
-                icon: Text(
-                  "3",
-                  style: widget.textStyle,
-                ),
+                child: Text("3", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
             ],
           ),
@@ -58,26 +61,29 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("4"),
-                icon: Text(
-                  "4",
-                  style: widget.textStyle,
-                ),
+                child: Text("4", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("5"),
-                icon: Text(
-                  "5",
-                  style: widget.textStyle,
-                ),
+                child: Text("5", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("6"),
-                icon: Text(
-                  "6",
-                  style: widget.textStyle,
-                ),
+                child: Text("6", style: widget.textStyle,),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
             ],
           ),
@@ -87,26 +93,38 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              IconButton(
+              new RawMaterialButton(
                 onPressed: () => widget.onPressedKey("7"),
-                icon: Text(
+                child: Text(
                   "7",
                   style: widget.textStyle,
                 ),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              new RawMaterialButton(
                 onPressed: () => widget.onPressedKey("8"),
-                icon: Text(
+                child: Text(
                   "8",
                   style: widget.textStyle,
                 ),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
-              IconButton(
+              new RawMaterialButton(
                 onPressed: () => widget.onPressedKey("9"),
-                icon: Text(
+                child: Text(
                   "9",
                   style: widget.textStyle,
                 ),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
             ],
           ),
@@ -123,13 +141,18 @@ class CustomKeyboardState extends State<CustomKeyboard> {
                   style: widget.textStyle,
                 ),
               ),
-              IconButton(
+              RawMaterialButton(
                 onPressed: () => widget.onPressedKey("0"),
-                icon: Text(
+                child: Text(
                   "0",
                   style: widget.textStyle,
                 ),
+                shape: new CircleBorder(side: BorderSide(color: Colors.green[600])),
+                fillColor: Colors.green[50],
+                elevation: 0,
+                padding: EdgeInsets.all(5),
               ),
+
               IconButton(
                 onPressed: () => widget.onBackPressed(),
                 icon: Icon(
