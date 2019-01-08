@@ -20,12 +20,12 @@ class CustomKeyboardState extends State<CustomKeyboard> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return new Column(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
+          padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -57,7 +57,7 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
+          padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -89,7 +89,7 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
+          padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -130,7 +130,7 @@ class CustomKeyboardState extends State<CustomKeyboard> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 20.0),
+          padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
