@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import './custom_keyboard.dart';
 import './code_view.dart';
 
@@ -8,7 +8,8 @@ class PinCode extends StatefulWidget {
   final int codeLength;
   final TextStyle keyTextStyle, codeTextStyle;
   final bool obscurePin;
-
+  final Color backspaceColor;
+  
   PinCode({
     this.title,
     this.subTitle,
@@ -18,6 +19,7 @@ class PinCode extends StatefulWidget {
     this.keyTextStyle = const TextStyle(color: Colors.white, fontSize: 25.0),
     this.codeTextStyle = const TextStyle(
         color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold),
+    this.backspaceColor
   });
 
   PinCodeState createState() => PinCodeState();
@@ -55,6 +57,7 @@ class PinCodeState extends State<PinCode> {
         ),
         CustomKeyboard(
           textStyle: widget.keyTextStyle,
+          backspaceColor: widget.backspaceColor,
           onPressedKey: (key) {
             if (smsCode.length < widget.codeLength) {
               setState(() {
