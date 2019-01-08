@@ -29,7 +29,8 @@ class CodeViewState extends State<CodeView> {
         Container(
           margin: EdgeInsets.all(5.0),
           decoration: BoxDecoration(
-            color: Colors.black12,
+            color: Colors.grey[100],
+            border: Border.all(width: 1, color: Colors.blueGrey[600]),
             borderRadius: BorderRadius.all(
               Radius.circular(10.0),
             ),
