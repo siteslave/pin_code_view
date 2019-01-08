@@ -131,7 +131,7 @@ class CustomKeyboardState extends State<CustomKeyboard> {
                 onPressed: () => widget.onBackPressed(),
                 icon: Icon(
                   Icons.backspace,
-                  color: Colors.white,
+                  color: Colors.blueGrey[800],
                 ),
               ),
             ],
